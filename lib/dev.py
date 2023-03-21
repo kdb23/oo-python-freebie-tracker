@@ -15,3 +15,13 @@ class Dev:
     @property
     def companies(self):
         return [c.company_instance for c in Freebie.all if c.company_instance == self]
+    
+
+    def recieved_one(self, item_name):
+        if item_name in self.freebies:
+            return True
+        else:
+            return False
+        
+    def give_away(self, freebie):
+        pass
