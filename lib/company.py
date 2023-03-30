@@ -22,6 +22,10 @@ class Company:
     def give_freebie(self, item, value, dev):
         return Freebie(item, value, dev, self)
     
+        # len(c1.freebies)--- 1
+        # c1.give_freebie("iphone", 123, d1)
+        # len(c1.freebies) --- 2
+    
     @classmethod
     def oldest_company(cls):
         old_time = 3000
