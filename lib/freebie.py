@@ -10,5 +10,7 @@ class Freebie:
         self.company_instance = company_instance
         Freebie.all.append(self)
 
-    
+    @property
+    def print_details(self):
+        print(f"{self.dev_instance.name} owns a {self.item_name} from {self.company_instance.name}")
     
